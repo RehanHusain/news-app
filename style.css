@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Open+Sans:wght@300&family=Ubuntu:wght@300&family=Varela+Round&display=swap"); /* ---------------------Base Style------------------ */
+
+:root {
+  --dark-color: #333;
+  --light-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Baloo Bhai", sans-serif;
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+/* -------------------NavBar------------------ */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.container {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: var(--light-color);
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a:hover {
+  border-bottom: 1px solid var(--light-color);
+  color: grey;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+/* ---------------------------Card ------------------------- */
+.container-card {
+  /* background-color: gray; */
+  margin: 35px auto;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  height: auto;
+}
+img {
+  /* position: static;
+  top: 0; */
+  max-width: 100%;
+}
+.card {
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  width: 18rem;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card .btn {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #0000008a;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.card .btn:hover {
+  transform: scale(1.1);
+}
